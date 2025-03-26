@@ -8,15 +8,17 @@
 </head>
 <body>
 
-    <h1>도서 등록</h1>
-    <form action="/books/insert" method="post">
-        <input type="text" name="bookId"/><br>
-        <input type="text" name="bookName"/><br>
-        <input type="text" name="publisher"/><br>
+    <h1>휴대폰 등록</h1>
+    <form action="/phone/insert" method="post">
+        <input type="text" name="name"/><br>
+        <input type="text" name="brand"/><br>
+        <input type="text" name="color"/><br>
+        <input type="text" name="capacity"/><br>
         <input type="text" name="price"/><br>
+        <input type="text" name="stock"/><br>
         <button type="submit">등록</button>
     </form>
     <hr>
-    <a href="/books/list"> 목록 </a>
+    <a href="/phone/list"> 목록 </a>
 </body>
 </html>

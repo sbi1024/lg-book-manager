@@ -4,7 +4,7 @@
     <title>Title</title>
 </head>
 <body>
-    <h1>도서 수정 완료 !!!</h1>
-    <a href="/books/list">목록</a>
+    <h1>휴대폰 수정 완료 !!!</h1>
+    <a href="/phone/list">목록</a>
 </body>
 </html>

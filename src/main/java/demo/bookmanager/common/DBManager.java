@@ -16,7 +16,7 @@ public class DBManager {
         try {
             Context context = new InitialContext();
 
-            DataSource ds = (DataSource) context.lookup("java:comp/env/jdbc/madang");
+            DataSource ds = (DataSource) context.lookup("java:comp/env/jdbc/mini_project");
             con = ds.getConnection();
         } catch (Exception e) {
             e.printStackTrace();

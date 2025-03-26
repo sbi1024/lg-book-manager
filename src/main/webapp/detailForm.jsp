@@ -1,7 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
-<%@ page import="demo.bookmanager.dto.BookDto" %>
+<%@ page import="demo.bookmanager.dto.PhoneDto" %>
+<%@ page import="demo.bookmanager.dto.PhoneDto" %>
 <%
-    BookDto bookDto = (BookDto) request.getAttribute("bookDto");
+    PhoneDto phoneDto = (PhoneDto) request.getAttribute("phoneDto");
 %>
 <!DOCTYPE html>
 <html>
@@ -11,16 +12,19 @@
 </head>
 <body>
 
-<h1>도서 상세 및 수정</h1>
-<form action="/books/update" method="post">
-    <input type = "text" name = "bookId" value="<%= bookDto.getBookId() %>"/><br>
-    <input type = "text" name = "bookName" value="<%= bookDto.getBookName() %>"/><br>
-    <input type = "text" name = "publisher" value="<%= bookDto.getPublisher() %>"/><br>
-    <input type = "text" name = "price" value="<%= bookDto.getPrice() %>"/><br>
+<h1>휴대폰 상세 및 수정</h1>
+<form action="/phone/update" method="post">
+    <input type = "text" name = "phoneId" value="<%= phoneDto.getPhoneId() %>"/><br>
+    <input type = "text" name = "name" value="<%= phoneDto.getName() %>"/><br>
+    <input type = "text" name = "brand" value="<%= phoneDto.getBrand() %>"/><br>
+    <input type = "text" name = "color" value="<%= phoneDto.getColor() %>"/><br>
+    <input type = "text" name = "capacity" value="<%= phoneDto.getCapacity() %>"/><br>
+    <input type = "text" name = "price" value="<%= phoneDto.getPrice() %>"/><br>
+    <input type = "text" name = "stock" value="<%= phoneDto.getStock() %>"/><br>
     <button type="submit">수정</button>
 </form>
     <hr>
-    <a href="/books/list"> 목록 </a>
-    <a href="/books/delete?bookId=<%= bookDto.getBookId() %>"> 삭제 </a>
+    <a href="/phone/list"> 목록 </a>
+    <a href="/phone/delete?phoneId=<%= phoneDto.getPhoneId() %>"> 삭제 </a>
 </body>
 </html>
